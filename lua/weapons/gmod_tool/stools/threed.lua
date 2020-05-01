@@ -9,7 +9,7 @@ TOOL.Name = "ThreeD Text"
 TOOL.Command = nil
 TOOL.ConfigName = ""
 
-TOOL.ClientConVar["text"] = "Some Stupid Text"
+TOOL.ClientConVar["text"] = "Some Friendly Text"
 TOOL.ClientConVar["size"] = "10"
 
 if CLIENT then
