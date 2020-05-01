@@ -1,9 +1,0 @@
-"AddonInfo"
-{
-	"name"        "3D Text"
-	"version"     "1.0"
-	"author_name" "Sergiusz Bazanski"
-	"author_url"  "http://www.q3k.org/"
-	"info"        "Lets you use 3D text in-game."
-	"override"    "0"
-}

@@ -1,0 +1,7 @@
+{
+    "title": "ThreeD",
+    "type": "tool",
+    "tags": ["build", "3d"],
+    "description": "Lets you place 3D text in game.",
+    "ignore": ["*..git"]
+}
