@@ -16,3 +16,8 @@ Screenshot
 ----------
 
 ![](https://q3k.org/u/9b7c92104f0e4741c1b24ae2467f9a5dcf318bc863d7690ba18b967d44e7333f.png)
+
+Related work
+-------------
+
+A friendly soul by the name of Ugleh has maintained [a fork of this addon](https://garrysmods.org/download/44202/threed-12) for a while, but it seems to not have been ported over to Garry's Mod 13. It would be nice to integrate changes they implemented into this codebase.
