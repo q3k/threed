@@ -1,7 +1,8 @@
 // ThreeD, a 3d text thingamabob for Garry's Mod
-// By Sergiusz Bazañski, a.k.a. q3k.
-// This code is released under the do-whatever-you-want-but-don't-be-a-douche license.
-// www.q3k.org, 2010
+// Copyright 2010-2020 Serge 'q3k' Bazanski <q3k@q3k.org>
+// This work is free. You can redistribute it and/or modify it under the
+// terms of the Do What The Fuck You Want To Public License, Version 2,
+// as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
 
 Msg("[ThreeD] Bootstrapping...\n")
 include("threed/cl_main.lua")
