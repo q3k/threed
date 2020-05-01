@@ -4,6 +4,7 @@
 // terms of the Do What The Fuck You Want To Public License, Version 2,
 // as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
 
+local _R = debug.getregistry()
 function _R.bf_read:ReadColor()
     return Color(self:ReadChar() + 128, self:ReadChar() + 128, self:ReadChar() + 128, self:ReadChar() + 128);
 end
@@ -53,7 +54,14 @@ function threed.ReceiveInitialMesage(um)
     threed.Settings.Weight = um:ReadShort()
     threed.Settings.FadeDistance = um:ReadLong()
     
-    surface.CreateFont(threed.Settings.Font, ScreenScale(800), threed.Settings.Weight, threed.Settings.AA, false, "ThreeD")
+    surface.CreateFont("ThreeD", {
+        font = threed.Settings.Font,
+        size = ScreenScale(800),
+        weight = threed.Settings.Weight,
+        antialias = threed.Settings.AA,
+        additive = false,
+    })
+
     
     Msg("[ThreeD] Starting...\n")
     

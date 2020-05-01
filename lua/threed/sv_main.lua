@@ -4,8 +4,6 @@
 // terms of the Do What The Fuck You Want To Public License, Version 2,
 // as published by Sam Hocevar. See http://www.wtfpl.net/ for more details.
 
-require('glon')
-
 AddCSLuaFile("threed/cl_main.lua")
 
 threed = {}
@@ -72,7 +70,7 @@ end
 
 function threed.SaveData()
     local MapName = game.GetMap()
-    local Data = glon.encode(threed.Stored)
+    local Data = util.TableToJSON(threed.Stored)
     
     file.Write("ThreeD/" .. MapName .. ".txt", Data)
 end
@@ -80,9 +78,9 @@ end
 function threed.InitializeHook()
     local MapName = game.GetMap()
     
-    if file.Exists("ThreeD/" .. MapName .. ".txt") then
-        local Data = file.Read("ThreeD/" .. MapName .. ".txt")
-        threed.Stored = glon.decode(Data)
+    if file.Exists("ThreeD/" .. MapName .. ".txt", "DATA") then
+        local Data = file.Read("ThreeD/" .. MapName .. ".txt", "DATA")
+        threed.Stored = util.JSONToTable(Data)
     end
 end
 hook.Add("Initialize", "threed.Initialize", threed.InitializeHook)

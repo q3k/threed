@@ -13,9 +13,11 @@ TOOL.ClientConVar["text"] = "Some Stupid Text"
 TOOL.ClientConVar["size"] = "10"
 
 if CLIENT then
-    language.Add("Tool_threed_name", "ThreeD Text Tool")
-    language.Add("Tool_threed_desc", "Places a 3D text at the hit position.")
-    language.Add("Tool_threed_0", "Primary: Place text. Secondary: Remove text near hit position.")
+    language.Add("tool.threed.name", "ThreeD Text Tool")
+    language.Add("tool.threed.desc", "Places a 3D text at the hit position.")
+    language.Add("tool.threed.left", "Place text")
+    language.Add("tool.threed.right", "Remove text near hit position")
+    TOOL.Information = { "left", "right" }
 end
 
 function TOOL:LeftClick(Trace)
